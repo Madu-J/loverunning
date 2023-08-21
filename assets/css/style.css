@@ -20,12 +20,15 @@ body {
 }
 /* Header */
 header {
-    background-color: blue;
+    background-color: orange;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Main content */
 main {
-    background-color: blueviolet;
+    background-color: #fff;
     /* Make main element take up my surplus space to push footer down */
     flex: 1 0 auto;
 }
