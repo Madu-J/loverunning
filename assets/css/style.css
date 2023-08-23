@@ -18,6 +18,8 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -30,10 +32,13 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
+
 header a {
     text-decoration: none;
     color: inherit;
 }
+
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -42,18 +47,24 @@ h1 {
     color: #252525;
 }
 
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
+
+
 #menu > li {
    margin-bottom: 1em; 
 }
 
+
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 
 /* Navbar styles with dropdown toggle */
 nav {
@@ -67,18 +78,22 @@ nav {
     top: 100%;
 }
 
+
 /* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
 
+
 #nav-toggle {
 display: none;
 }
 
+
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 
 /* Main content */
 main {
@@ -88,7 +103,34 @@ main {
     margin-top: 47px;
 }
 
+
 /* Footer */
 footer {
     background-color: aqua;
+}
+
+
+/* Media query: tablets and large (768px and up) */
+@media screen and (min-width:768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
 }
